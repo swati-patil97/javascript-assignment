@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <h3>Assignment 2</h3>
+    </head>
+    <body>
+        <script>
+            //document.write("Current date is:",Date());
+            var today = new Date();
+            var day = today.getDay()
+            var month = today.getMonth()+1;
+            var year = today.getFullYear();
+            //document.write(today,"<br>");
+            if(day<10)
+            {
+                day = '0'+ day;
+            }
+            if(month<10)
+            {
+                month = '0'+ month;
+            }
+           
+            today = month+'-'+day+'-'+year;
+            document.write(today,"<br>");
+
+            today = month+'/'+day+'/'+year;
+            document.write(today,"<br>");
+
+            today = day+'-'+month+'-'+year;
+            document.write(today,"<br>");
+
+            today = day+'/'+month+'/'+year;
+            document.write(today,"<br>");
+        </script>       
+    </body>
+</html>
