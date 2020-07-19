@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="add()">add</button>
+    <button onclick="sub()">sub</button>
+    <button onclick="mul()">mul</button>
+    <button onclick="div()">div</button>
+    <button onclick="sqr()">squr</button>
+    <button onclick="per()">percentage</button>
+    <script>
+    var n1 = 8;
+    var n2 = 2;
+    document.write("<br>n1 is: "+n1 +"<br> n2 is: "+n2);
+        function add(){
+            var result = n1 + n2;
+            document.write(result);
+        }
+        function sub(){
+            var result = n1 - n2;
+            document.write(result);
+        }
+        function mul(){
+            var result = n1 * n2;
+            document.write(result);
+        }
+        function div(){
+            var result = n1 / n2;
+            document.write(result);
+        }
+        function sqr(){
+            var result = Math.sqrt(n1);
+            document.write("Square root of "+ n2 +" is: "+result);
+        }
+        function per(){
+            var result = n1 % n2;
+            document.write(result);
+        }
+    </script>
+</body>
+</html>
