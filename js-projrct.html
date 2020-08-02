@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Randome Quote Generation</title>
+    <style>
+        body{
+           background-image: url("blue-sea-sunset.jpg");
+           background-position:center;
+        }
+        .divmain {
+            width: 350px;
+            margin:auto;
+            text-align: center;
+            color:aqua;   
+        }
+        #quoteDisplay {
+            font-size: 25px;
+            color: white;  
+            height:230px;
+            line-height: 40px;   
+            font-family: Arial, Helvetica, sans-serif;
+            word-wrap: break-word;  
+            margin: 20px;
+            padding:15px;
+            border:2px solid white;
+        }
+        button {
+            font-size: 20px;
+            color: white;
+            padding:10px;
+            border: none;
+            border-radius: 15px;
+            background-color:blue;
+        }
+    </style>
+</head>
+<body>
+<div class="divmain">
+    <h1>Simple Quote Generator</h1>
+    <div id="quoteDisplay"></div>
+    <button onclick="newQuote()">newQutoes</button>
+</div>
+    <script>
+        var quotes = ['"Strive not to be a success, but rather to be of value."',
+        '"I am not a product of my circumstances. I am a product of my decisions."',
+        '" I am not a product of my circumstances. I am a product of my decisions."',
+        '"When everything seems to be going against you, remember that the airplane takes off against the wind, not with it."',
+        '"The most common way people give up their power is by thinking they don’t have any."',
+        '"The most difficult thing is the decision to act, the rest is merely tenacity."',
+        '"Be not afraid of life. Believe that life is worth living, and your belief will help create the fact."',
+        '"Build your own dreams, or someone else will hire you to build theirs."',
+        '"Remember that not getting what you want is sometimes a wonderful stroke of luck."',
+        '"You can’t use up creativity. The more you use, the more you have."',
+        '"I have learned over the years that when one’s mind is made up, this diminishes fear."'
+        ];
+        
+        function newQuote(){
+            var randomenumber = Math.floor(Math.random() * (quotes.length));
+            document.getElementById('quoteDisplay').innerHTML = quotes[randomenumber];
+        }
+    </script>
+</body>
+</html>
